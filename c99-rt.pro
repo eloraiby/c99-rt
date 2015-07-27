@@ -11,11 +11,13 @@ TEMPLATE = lib
 CONFIG += staticlib
 
 SOURCES += \
-    tinycthread.c
+    tinycthread.c \
+    tinycdir.c
 
 HEADERS += \
     internal/tinycthread.h \
-    rt.h
+    rt.h \
+    internal/tinycdir.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
